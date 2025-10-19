@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarSpotsCpt Photography & Videography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CarSpotsCpt</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Capturing the Spirit of the Road</h1>
+        <p>Premium Photography & Videography Services</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are CarSpotsCpt Photography & Videography, specializing in high-end car photography and videography. With a minimalist approach, we capture the essence of every vehicle, delivering timeless images and videos that showcase their beauty and power.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <img src="Images Portrait/IMG_0109.jpg" alt="Lamborghini Murcialago">
+            <img src="Images Portrait/IMG_0118.jpg" alt="Lamborghini SVJ">
+            <img src="Images Portrait/IMG_0461.jpg" alt="BMW E92 M3">
+            <img src="Images Portrait/IMG_0173.jpg" alt="Toyota Supra MK4">
+            <img src="Images Portrait/IMG_0541.jpg" alt="BMW F82 M4">
+            <img src="Images Portrait/IMG_0105.jpg" alt="Lamborghini SVJ">
+        </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <div style=" margin: auto 5%;">
+        <iframe src="https://forms.gle/byJQwc9A3sEiDjVe9" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    </section>
+
+    <footer>
+        &copy; 2025 CarSpotsCpt Photography & Videography. All rights reserved.
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+
+        function toggleTheme() {
+            const body = document.body;
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+</body>
+</html>
